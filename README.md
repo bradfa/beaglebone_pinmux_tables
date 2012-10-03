@@ -1,6 +1,6 @@
-# Beaglebone Pin Mux Tables
+# BeagleBone Pin Mux Tables
 
-The [Beaglebone SRM][1] has the pin mux settings in it but they are spread
+The [BeagleBone SRM][1] has the pin mux settings in it but they are spread
 across many pages and are difficult to read or supply changes to.  A few
 intrepid folks have tried to make Excel sheets that are easier to use but
 then submitting changes is hard.
