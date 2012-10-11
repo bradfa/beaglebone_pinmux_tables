@@ -40,7 +40,7 @@
      39          B6         AIN0
      40          C7         AIN1
      41         D14  xdma_event_intr1  xdma_event_intr1                       tclkin                clkout2                 timer7_mux1                       EMU3_mux0       gpio0[20]
-     42         C18  eCAP0_in_PWM0_Out eCAP0_in_PWM0_Out      uart3_txd      spi1_cs1     pr1_ecap0_ecap_cap_in_apwm_o       spi1_sclk       mmc0_sdwp     xdma_event_intr2    gpio0_7 
+     42         C18  eCAP0_in_PWM0_Out eCAP0_in_PWM0_Out      uart3_txd      spi1_cs1     pr1_ecap0_ecap_cap_in_apwm_o       spi1_sclk       mmc0_sdwp     xdma_event_intr2    gpio0[7]
      43                      GND
      44                      GND
      45                      GND
