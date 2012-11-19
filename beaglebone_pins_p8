@@ -16,7 +16,7 @@
     15         U13      gpmc_ad15        gpmc_ad15         lcd_data16          mmc1_dat7          mmc2_dat3        eQEP2_strobe                                               gpio1[15]     
     16         V13      gpmc_ad14        gpmc_ad14         lcd_data17          mmc1_dat6          mmc2_dat2         eQEP2_index                                               gpio1[14]     
     17         U12      gpmc_ad11        gpmc_ad11         lcd_data20          mmc1_dat3          mmc2_dat7        ehrpwm0_synco                                              gpio0[27]     
-    18         V12    gpmc_clk_mux0    gpmc_clk_mux0     lcd_memory_clk       gpmc_wait1          mmc2_clk                                                mcasp0_fsr          gpio2[1]      
+    18         V12      gpmc_clk         gpmc_clk          lcd_memory_clk      gpmc_wait1         mmc2_clk                                                mcasp0_fsr          gpio2[1]      
     19         U10      gpmc_ad8         gpmc_ad8          lcd_data23          mmc1_dat0          mmc2_dat4          ehrpwm2A                                                 gpio0[22]     
     20         V9       gpmc_csn2        gpmc_csn2          gpmc_be1n          mmc1_cmd                                                                                       gpio1[31]     
     21         U9       gpmc_csn1        gpmc_csn1          gpmc_clk           mmc1_clk                                                                                       gpio1[30]     
