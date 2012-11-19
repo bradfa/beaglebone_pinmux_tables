@@ -10,7 +10,7 @@
      9         T6     gpmc_be0n_cle    gpmc_be0n_cle                            timer5                                                                                        gpio2[5]      
     10         U6       gpmc_wen         gpmc_wen                               timer6                                                                                        gpio2[4]      
     11         R12      gpmc_ad13        gpmc_ad13         lcd_data18          mmc1_dat5          mmc2_dat1          eQEP2B_in                                                gpio1[13]     
-    12         T12      gpmc_ad12        gpmc_ad12         lcd_data19          mmc1_dat4          mmc2_dat0          EQEP2A_IN                                                gpio1[12]     
+    12         T12      gpmc_ad12        gpmc_ad12         lcd_data19          mmc1_dat4          mmc2_dat0          eQEP2A_IN                                                gpio1[12]     
     13         T10      gpmc_ad9         gpmc_ad9          lcd_data22          mmc1_dat1          mmc2_dat5          ehrpwm2B                                                 gpio0[23]     
     14         T11      gpmc_ad10        gpmc_ad10         lcd_data21          mmc1_dat2          mmc2_dat6     ehrpwm2_tripzone_in                                           gpio0[26]     
     15         U13      gpmc_ad15        gpmc_ad15         lcd_data16          mmc1_dat7          mmc2_dat3        eQEP2_strobe                                               gpio1[15]     
