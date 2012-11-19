@@ -17,8 +17,8 @@
      16         T14        gpmc_a3          gpmc_a3           mii2_txd2     rgmii2_td2             mmc2_dat2                  gpmc_a19                      ehrpwm1B          gpio1[19]
      17         A16       spi0_cs0         spi0_cs0           mmc2_sdwp      I2C1_SCL            ehrpwm0_synci                                                                gpio0[5] 
      18         B16        spi0_d1          spi0_d1           mmc1_sdwp      I2C1_SDA           ehrpwm0_tripzone                                                              gpio0[4] 
-     19         D17      uart1_rtsn       uart1_rtsn           timer5        dcan0_rx               I2C2_SCL                  spi1_cs1                                        gpio0[13]
-     20         D18      uart1_ctsn       uart1_ctsn           timer6        dcan0_tx               I2C2_SDA                  spi1_cs0                                        gpio0[12]
+     19         D17      uart1_rtsn       uart1_rtsn           timer5        dcan0_rx               i2c2_scl                  spi1_cs1                                        gpio0[13]
+     20         D18      uart1_ctsn       uart1_ctsn           timer6        dcan0_tx               i2c2_sda                  spi1_cs0                                        gpio0[12]
      21         B17        spi0_d0          spi0_d0           uart2_txd      I2C2_SCL               ehrpwm0B                                                  EMU3            gpio0[3] 
      22         A17       spi0_sclk        spi0_sclk          uart2_rxd      I2C2_SDA               ehrpwm0A                                                  EMU2            gpio0[2] 
      23         V14        gpmc_a1          gpmc_a1          gmii2_rxdv     rgmii2_rxdv            mmc2_dat0                  gpmc_a17                      ehrpwm0_synco     gpio1[17]
@@ -26,7 +26,7 @@
      25         A14     mcasp0_ahclkx    mcasp0_ahclkx      eQEP0_strobe    mcasp0_axr3           mcasp1_axr1                EMU4                                             gpio3[21]
      26         D16       uart1_rxd        uart1_rxd          mmc1_sdwp      dcan1_tx               I2C1_SDA                                                                  gpio0[14]
      27         C13      mcasp0_fsr       mcasp0_fsr          eQEP0B_in     mcasp0_axr3            mcasp1_fsx                EMU2                                             gpio3[19]
-     28         C12     mcasp0_ahclkr    mcasp0_ahclkr      ehrpwm0_synci   mcasp0_axr2             spi1_cs0             eCAP2_in_PWM2_out                                    gpio3[17]
+     28         C12     mcasp0_ahclkr    mcasp0_ahclkr      ehrpwm0_synci   mcasp0_axr2             spi1_cs0             ecap2_in_pwm2_out                                    gpio3[17]
      29         B13      mcasp0_fsx       mcasp0_fsx          ehrpwm0B                              spi1_d0                mmc1_sdcd                                          gpio3[15]
      30         D12      mcasp0_axr0      mcasp0_axr0     ehrpwm0_tripzone                          spi1_d1                mmc2_sdcd                                          gpio3[16]
      31         A13     mcasp0_aclkx     mcasp0_aclkx         ehrpwm0A                             spi1_sclk               mmc0_sdcd                                          gpio3[14]
@@ -40,7 +40,7 @@
      39          B6         AIN0
      40          C7         AIN1
      41         D14  xdma_event_intr1  xdma_event_intr1                       tclkin                clkout2                 timer7                            EMU3            gpio0[20]
-     42         C18  eCAP0_in_PWM0_Out eCAP0_in_PWM0_Out      uart3_txd      spi1_cs1     pr1_ecap0_ecap_cap_in_apwm_o       spi1_sclk       mmc0_sdwp     xdma_event_intr2    gpio0[7]
+     42         C18  ecap0_in_pwm0_out ecap0_in_pwm0_out      uart3_txd      spi1_cs1     pr1_ecap0_ecap_cap_in_apwm_o       spi1_sclk       mmc0_sdwp     xdma_event_intr2    gpio0[7]
      43                      GND
      44                      GND
      45                      GND
