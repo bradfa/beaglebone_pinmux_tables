@@ -41,9 +41,9 @@
      39          B6                       AIN0
      40          C7                       AIN1
      41         D14         0x1b4     xdma_event_intr1   xdma_event_intr1                    tclkin                clkout2                timer7                            EMU3              gpio0[20]
-     41         D13         0x0??       gpio3_20          mcasp0_axr1         eQEPO_index                         mcasp1_axr0              EMU3           pru0_r30_6      pru0_r31_6          gpio3[20]
+     41         D13         0x1A8       mcasp0_axr1       mcasp0_axr1         eQEPO_index                         mcasp1_axr0              EMU3           pru0_r30_6      pru0_r31_6          gpio3[20]
      42         C18         0x164     ecap0_in_pwm0_out  ecap0_in_pwm0_out    uart3_txd      spi1_cs1      pr1_ecap0_ecap_cap_in_apwm_o   spi1_sclk       mmc0_sdwp       xdma_event_intr2    gpio0[7]
-     42         B12         0x0??       gpio3_18          mcasp0_aclkr        eQEPO_in       mcasp0_axr2          mcasp1_aclkx                            pru0_r30_4      pru0_r31_4          gpio3[18]
+     42         B12         0x1A0       mcasp0_aclkr      mcasp0_aclkr        eQEPO_in       mcasp0_axr2          mcasp1_aclkx                            pru0_r30_4      pru0_r31_4          gpio3[18]
      43         GND                       GND
      44         GND                       GND
      45         GND                       GND
