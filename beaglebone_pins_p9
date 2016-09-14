@@ -1,4 +1,4 @@
-    PIN         PROC    PINCTRL ADDR       NAME             MODE0              MODE1          MODE2                 MODE3                  MODE4             MODE5           MODE6             MODE7  
+    PIN         PROC    PINCTRL ADDR       NAME             MODE0              MODE1          MODE2                 MODE3                  MODE4             MODE5           MODE6             MODE7
      1          GND                        GND
      2          GND                        GND
      3       VDD_3V3EXP                 VDD_3V3EXP
