@@ -24,7 +24,7 @@
      22         A17         0x150        spi0_sclk        spi0_sclk         uart2_rxd      i2c2_sda               ehrpwm0A                                                  EMU2              gpio0[2]
      23         V14         0x044        gpmc_a1          gpmc_a1           gmii2_rxdv     rgmii2_rxdv            mmc2_dat0               gpmc_a17                        ehrpwm0_synco       gpio1[17]
      24         D15         0x184        uart1_txd        uart1_txd          mmc2_sdwp      dcan1_rx               i2c1_scl                                               pru0_r31_16         gpio0[15]
-     25         A14         0x1ac        mcasp0_ahclkx    mcasp0_ahclkx    eQEP0_strobe    mcasp0_axr3           mcasp1_axr1               EMU4            pru0_r30_7     pru0_r31_7          gpio3[21]
+  x  25         A14         0x1ac        mcasp0_ahclkx    mcasp0_ahclkx    eQEP0_strobe    mcasp0_axr3           mcasp1_axr1               EMU4            pru0_r30_7     pru0_r31_7          gpio3[21]
      26         D16         0x180        uart1_rxd        uart1_rxd          mmc1_sdwp      dcan1_tx               i2c1_sda                                               pru1_r30_16         gpio0[14]
      27         C13         0x1a4        mcasp0_fsr       mcasp0_fsr         eQEP0B_in     mcasp0_axr3            mcasp1_fsx               EMU2            pru0_r30_5     pru0_r31_5          gpio3[19]
      28         C12         0x19c        mcasp0_ahclkr    mcasp0_ahclkr    ehrpwm0_synci   mcasp0_axr2             spi1_cs0            ecap2_in_pwm2_out   pru0_r30_3     pru0_r31_3          gpio3[17]
@@ -48,3 +48,5 @@
      44         GND                       GND
      45         GND                       GND
      46         GND                       GND
+
+* x == BeagleBone Black conflict pin due to on-board peripherals
