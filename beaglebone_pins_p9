@@ -1,52 +1,52 @@
-    PIN         PROC    PINCTRL ADDR       NAME             MODE0              MODE1          MODE2                 MODE3                  MODE4             MODE5           MODE6             MODE7
-     1          GND                        GND
-     2          GND                        GND
-     3       VDD_3V3EXP                 VDD_3V3EXP
-     4       VDD_3V3EXP                 VDD_3V3EXP
-     5         VDD_5V                     VDD_5V
-     6         VDD_5V                     VDD_5V
-     7         SYS_5V                     SYS_5V
-     8         SYS_5V                     SYS_5V
-     9                                    PWR_BUT*
-     10         A10                      RESET_OUT        RESET_OUT
-     11         T17         0x070        gpmc_wait0       gpmc_wait0         mii2_crs       gpmc_csn4            rmii2_crs_dv             mmc1_sdcd                        uart4_rxd          gpio0[30]
-     12         U18         0x078        gpmc_be1n        gpmc_be1n          mii2_col       gpmc_csn6             mmc2_dat3               gpmc_dir                      mcasp0_aclkr          gpio1[28]
-     13         U17         0x074        gpmc_wpn         gpmc_wpn           mii2_rxerr      gpmc_csn5            rmii2_rxerr             mmc2_sdcd                        uart4_txd          gpio0[31]
-     14         U14         0x048        gpmc_a2          gpmc_a2            mii2_txd3     rgmii2_td3             mmc2_dat1               gpmc_a18                        ehrpwm1A            gpio1[18]
-     15         R13         0x040        gpmc_a0          gpmc_a0           gmii2_txen     rmii2_tctl             mii2_txen               gpmc_a16                     ehrpwm1_tripzone_input gpio1[16]
-     15         T13         0x088        gpmc_csn3        gpmc_csn3           gpmc_a3     rmii2_crs_dv            mmc2_cmd              pr1_mii0_crs      pr1_mdio_data     EMU4              gpio2[0]
-     16         T14         0x04c        gpmc_a3          gpmc_a3            mii2_txd2     rgmii2_td2             mmc2_dat2               gpmc_a19                        ehrpwm1B            gpio1[19]
-     17         A16         0x15c        spi0_cs0         spi0_cs0           mmc2_sdwp      i2c1_scl            ehrpwm0_synci                                                                 gpio0[5]
-     18         B16         0x158        spi0_d1          spi0_d1            mmc1_sdwp      i2c1_sda           ehrpwm0_tripzone                                                               gpio0[4]
-     19         D17         0x17c        uart1_rtsn       uart1_rtsn         timer5        dcan0_rx               i2c2_scl                spi1_cs1                                            gpio0[13]
-     20         D18         0x178        uart1_ctsn       uart1_ctsn         timer6        dcan0_tx               i2c2_sda                spi1_cs0                                            gpio0[12]
-     21         B17         0x154        spi0_d0          spi0_d0           uart2_txd      i2c2_scl               ehrpwm0B                                                  EMU3              gpio0[3]
-     22         A17         0x150        spi0_sclk        spi0_sclk         uart2_rxd      i2c2_sda               ehrpwm0A                                                  EMU2              gpio0[2]
-     23         V14         0x044        gpmc_a1          gpmc_a1           gmii2_rxdv     rgmii2_rxdv            mmc2_dat0               gpmc_a17                        ehrpwm0_synco       gpio1[17]
-     24         D15         0x184        uart1_txd        uart1_txd          mmc2_sdwp      dcan1_rx               i2c1_scl                                               pru0_r31_16         gpio0[15]
-  x  25         A14         0x1ac        mcasp0_ahclkx    mcasp0_ahclkx    eQEP0_strobe    mcasp0_axr3           mcasp1_axr1               EMU4            pru0_r30_7     pru0_r31_7          gpio3[21]
-     26         D16         0x180        uart1_rxd        uart1_rxd          mmc1_sdwp      dcan1_tx               i2c1_sda                                               pru1_r30_16         gpio0[14]
-     27         C13         0x1a4        mcasp0_fsr       mcasp0_fsr         eQEP0B_in     mcasp0_axr3            mcasp1_fsx               EMU2            pru0_r30_5     pru0_r31_5          gpio3[19]
-     28         C12         0x19c        mcasp0_ahclkr    mcasp0_ahclkr    ehrpwm0_synci   mcasp0_axr2             spi1_cs0            ecap2_in_pwm2_out   pru0_r30_3     pru0_r31_3          gpio3[17]
-     29         B13         0x194        mcasp0_fsx       mcasp0_fsx         ehrpwm0B                              spi1_d0                mmc1_sdcd        pru0_r30_1     pru0_r31_1          gpio3[15]
-     30         D12         0x198        mcasp0_axr0      mcasp0_axr0    ehrpwm0_tripzone                          spi1_d1                mmc2_sdcd        pru0_r30_2     pru0_r31_2          gpio3[16]
-     31         A13         0x190        mcasp0_aclkx     mcasp0_aclkx       ehrpwm0A                             spi1_sclk               mmc0_sdcd        pru0_r30_0     pru0_r31_0          gpio3[14]
-     32       VDD_ADC                     VADC
-     33          C8                       AIN4
-     34       GNDA_ADC                    AGND
-     35          A8                       AIN6
-     36          B8                       AIN5
-     37          B7                       AIN2
-     38          A7                       AIN3
-     39          B6                       AIN0
-     40          C7                       AIN1
-     41         D14         0x1b4     xdma_event_intr1   xdma_event_intr1                    tclkin                clkout2                timer7                            EMU3              gpio0[20]
-     41         D13         0x1A8       mcasp0_axr1       mcasp0_axr1         eQEPO_index                         mcasp1_axr0              EMU3           pru0_r30_6      pru0_r31_6          gpio3[20]
-     42         C18         0x164     ecap0_in_pwm0_out  ecap0_in_pwm0_out    uart3_txd      spi1_cs1      pr1_ecap0_ecap_cap_in_apwm_o   spi1_sclk       mmc0_sdwp       xdma_event_intr2    gpio0[7]
-     42         B12         0x1A0       mcasp0_aclkr      mcasp0_aclkr        eQEPO_in       mcasp0_axr2          mcasp1_aclkx                            pru0_r30_4      pru0_r31_4          gpio3[18]
-     43         GND                       GND
-     44         GND                       GND
-     45         GND                       GND
-     46         GND                       GND
+    PIN         PROC    PINCTRL ADDR    AM33XX_IOPAD ADDR         NAME             MODE0              MODE1          MODE2                 MODE3                  MODE4             MODE5           MODE6             MODE7
+     1          GND                                               GND
+     2          GND                                               GND
+     3       VDD_3V3EXP                                        VDD_3V3EXP
+     4       VDD_3V3EXP                                        VDD_3V3EXP
+     5         VDD_5V                                            VDD_5V
+     6         VDD_5V                                            VDD_5V
+     7         SYS_5V                                            SYS_5V
+     8         SYS_5V                                            SYS_5V
+     9                                                           PWR_BUT*
+     10         A10                                             RESET_OUT        RESET_OUT
+     11         T17         0x070              0x870            gpmc_wait0       gpmc_wait0         mii2_crs       gpmc_csn4            rmii2_crs_dv             mmc1_sdcd                        uart4_rxd          gpio0[30]
+     12         U18         0x078              0x878            gpmc_be1n        gpmc_be1n          mii2_col       gpmc_csn6             mmc2_dat3               gpmc_dir                      mcasp0_aclkr          gpio1[28]
+     13         U17         0x074              0x874            gpmc_wpn         gpmc_wpn           mii2_rxerr      gpmc_csn5            rmii2_rxerr             mmc2_sdcd                        uart4_txd          gpio0[31]
+     14         U14         0x048              0x848            gpmc_a2          gpmc_a2            mii2_txd3     rgmii2_td3             mmc2_dat1               gpmc_a18                        ehrpwm1A            gpio1[18]
+     15         R13         0x040              0x840            gpmc_a0          gpmc_a0           gmii2_txen     rmii2_tctl             mii2_txen               gpmc_a16                     ehrpwm1_tripzone_input gpio1[16]
+     15         T13         0x088              0x888            gpmc_csn3        gpmc_csn3           gpmc_a3     rmii2_crs_dv            mmc2_cmd              pr1_mii0_crs      pr1_mdio_data     EMU4              gpio2[0]
+     16         T14         0x04c              0x84c            gpmc_a3          gpmc_a3            mii2_txd2     rgmii2_td2             mmc2_dat2               gpmc_a19                        ehrpwm1B            gpio1[19]
+     17         A16         0x15c              0x95c            spi0_cs0         spi0_cs0           mmc2_sdwp      i2c1_scl            ehrpwm0_synci                                                                 gpio0[5]
+     18         B16         0x158              0x958            spi0_d1          spi0_d1            mmc1_sdwp      i2c1_sda           ehrpwm0_tripzone                                                               gpio0[4]
+     19         D17         0x17c              0x97c            uart1_rtsn       uart1_rtsn         timer5        dcan0_rx               i2c2_scl                spi1_cs1                                            gpio0[13]
+     20         D18         0x178              0x978            uart1_ctsn       uart1_ctsn         timer6        dcan0_tx               i2c2_sda                spi1_cs0                                            gpio0[12]
+     21         B17         0x154              0x954            spi0_d0          spi0_d0           uart2_txd      i2c2_scl               ehrpwm0B                                                  EMU3              gpio0[3]
+     22         A17         0x150              0x950            spi0_sclk        spi0_sclk         uart2_rxd      i2c2_sda               ehrpwm0A                                                  EMU2              gpio0[2]
+     23         V14         0x044              0x944            gpmc_a1          gpmc_a1           gmii2_rxdv     rgmii2_rxdv            mmc2_dat0               gpmc_a17                        ehrpwm0_synco       gpio1[17]
+     24         D15         0x184              0x984            uart1_txd        uart1_txd          mmc2_sdwp      dcan1_rx               i2c1_scl                                               pru0_r31_16         gpio0[15]
+  x  25         A14         0x1ac              0x9ac            mcasp0_ahclkx    mcasp0_ahclkx    eQEP0_strobe    mcasp0_axr3           mcasp1_axr1               EMU4            pru0_r30_7     pru0_r31_7          gpio3[21]
+     26         D16         0x180              0x980            uart1_rxd        uart1_rxd          mmc1_sdwp      dcan1_tx               i2c1_sda                                               pru1_r30_16         gpio0[14]
+     27         C13         0x1a4              0x9a4            mcasp0_fsr       mcasp0_fsr         eQEP0B_in     mcasp0_axr3            mcasp1_fsx               EMU2            pru0_r30_5     pru0_r31_5          gpio3[19]
+     28         C12         0x19c              0x99c            mcasp0_ahclkr    mcasp0_ahclkr    ehrpwm0_synci   mcasp0_axr2             spi1_cs0            ecap2_in_pwm2_out   pru0_r30_3     pru0_r31_3          gpio3[17]
+     29         B13         0x194              0x994            mcasp0_fsx       mcasp0_fsx         ehrpwm0B                              spi1_d0                mmc1_sdcd        pru0_r30_1     pru0_r31_1          gpio3[15]
+     30         D12         0x198              0x998            mcasp0_axr0      mcasp0_axr0    ehrpwm0_tripzone                          spi1_d1                mmc2_sdcd        pru0_r30_2     pru0_r31_2          gpio3[16]
+     31         A13         0x190              0x990            mcasp0_aclkx     mcasp0_aclkx       ehrpwm0A                             spi1_sclk               mmc0_sdcd        pru0_r30_0     pru0_r31_0          gpio3[14]
+     32       VDD_ADC                                            VADC
+     33          C8                                              AIN4
+     34       GNDA_ADC                                           AGND
+     35          A8                                              AIN6
+     36          B8                                              AIN5
+     37          B7                                              AIN2
+     38          A7                                              AIN3
+     39          B6                                              AIN0
+     40          C7                                              AIN1
+     41         D14         0x1b4              0x9b4         xdma_event_intr1   xdma_event_intr1                    tclkin                clkout2                timer7                            EMU3              gpio0[20]
+     41         D13         0x1A8              0x9A8           mcasp0_axr1       mcasp0_axr1         eQEPO_index                         mcasp1_axr0              EMU3           pru0_r30_6      pru0_r31_6          gpio3[20]
+     42         C18         0x164              0x964         ecap0_in_pwm0_out  ecap0_in_pwm0_out    uart3_txd      spi1_cs1      pr1_ecap0_ecap_cap_in_apwm_o   spi1_sclk       mmc0_sdwp       xdma_event_intr2    gpio0[7]
+     42         B12         0x1A0              0x9A0           mcasp0_aclkr      mcasp0_aclkr        eQEPO_in       mcasp0_axr2          mcasp1_aclkx                            pru0_r30_4      pru0_r31_4          gpio3[18]
+     43         GND                                              GND
+     44         GND                                              GND
+     45         GND                                              GND
+     46         GND                                              GND
 
 * x == BeagleBone Black conflict pin due to on-board peripherals
