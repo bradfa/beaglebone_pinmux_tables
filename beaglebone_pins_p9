@@ -14,7 +14,6 @@
      13         U17         0x074              0x874            gpmc_wpn         gpmc_wpn           mii2_rxerr      gpmc_csn5            rmii2_rxerr             mmc2_sdcd                        uart4_txd          gpio0[31]
      14         U14         0x048              0x848            gpmc_a2          gpmc_a2            mii2_txd3     rgmii2_td3             mmc2_dat1               gpmc_a18                        ehrpwm1A            gpio1[18]
      15         R13         0x040              0x840            gpmc_a0          gpmc_a0           gmii2_txen     rmii2_tctl             mii2_txen               gpmc_a16                     ehrpwm1_tripzone_input gpio1[16]
-     15         T13         0x088              0x888            gpmc_csn3        gpmc_csn3           gpmc_a3     rmii2_crs_dv            mmc2_cmd              pr1_mii0_crs      pr1_mdio_data     EMU4              gpio2[0]
      16         T14         0x04c              0x84c            gpmc_a3          gpmc_a3            mii2_txd2     rgmii2_td2             mmc2_dat2               gpmc_a19                        ehrpwm1B            gpio1[19]
      17         A16         0x15c              0x95c            spi0_cs0         spi0_cs0           mmc2_sdwp      i2c1_scl            ehrpwm0_synci                                                                 gpio0[5]
      18         B16         0x158              0x958            spi0_d1          spi0_d1            mmc1_sdwp      i2c1_sda           ehrpwm0_tripzone                                                               gpio0[4]
